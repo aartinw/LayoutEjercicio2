@@ -1,0 +1,59 @@
+@use "baseB" as *;
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(1, 120px);
+  grid-template-rows: repeat(3, 90px);
+  gap: 1px;
+  font-size: $font-size;
+  padding: 10px;
+  font-family: $font-family;
+
+  .box-base {
+    background-color: $background-color-base;
+    border: $border-color;
+  }
+  .box-important {
+    background-color: $background-color-important;
+    border: $border-color;
+  }
+  .box-warning {
+    background-color: $background-color-warning;
+    border: $border-color;
+  }
+  p {
+    margin-left: 20px;
+  }
+}
+
+.fuente-principal {
+  p {
+    margin: 20px;
+    font-family: $font-family-principal;
+    font-size: $font-size;
+  }
+}
+.fuente-secundaria {
+  p {
+    margin: 20px;
+    font-family: $font-family-secundaria;
+    font-size: $font-size;
+  }
+}
+.container-shadow {
+  display: grid;
+  grid-template-columns: repeat(1, 120px);
+  grid-template-rows: repeat(1, 80px);
+  margin-left: 20px;
+  font-size: $font-size;
+  font-family: $font-family;
+
+  .shadow {
+    border: $border-color;
+    box-shadow: $shadow-box;
+    border-radius: $border-radius;
+  }
+  p {
+    margin-left: 20px;
+  }
+}
